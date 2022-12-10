@@ -44,24 +44,26 @@
         color: var(--accent-color);
         cursor: pointer;
      }
- }
- .link-contacts {
-     display: flex;
-     align-items: center;
-     gap: 10px;
-     color: var(--text-color);
-     font-weight: 500;
-     font-size: 14px;
-     line-height: 1.14;
-     letter-spacing: 0.02em;
-     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: block;
-        padding-top: 32px;
-        padding-bottom: 32px;
-     &:hover, &:focus {
-        color: var(--accent-color);
-            cursor: pointer;
-     }
+          &-contacts {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              color: var(--text-color);
+              font-weight: 500;
+              font-size: 14px;
+              line-height: 1.14;
+              letter-spacing: 0.02em;
+              transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+              display: block;
+              padding-top: 32px;
+              padding-bottom: 32px;
+    
+              &:hover,
+              &:focus {
+                  color: var(--accent-color);
+                  cursor: pointer;
+              }
+          }
  }
  .contacts-userpic {
      fill: currentColor;

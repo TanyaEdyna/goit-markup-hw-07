@@ -5,8 +5,7 @@
         padding-bottom: 60px;
         margin: 0 auto;
 }
-}
-.footer-logo {
+&-logo {
     display: block;
     margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
@@ -17,7 +16,15 @@
     letter-spacing: 0.03em;
     text-decoration: none;
 }
-
+&-contacts {
+    color: rgba(255, 255, 255, 0.6);
+}
+&-wrap {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+}
 .address-list {
     text-decoration: none;
     font-weight: 400;
@@ -29,21 +36,11 @@
         display: block;
         margin-bottom: 9px;
 }
+
 }
 .address-map {
     color: var(--white-color);
 }
-
-.footer-contacts {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-wrap {
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
-}
-
 .soc-content {
     margin-right: 93px;
 }
@@ -60,33 +57,30 @@
 
 }
 
-.footer-soc-list {
+.footer-soc {
     display: flex;
     justify-content: center;
     gap: 10px;
-    &:hover, &:focus {background-color: var(--accent-color);}
-}
-
-.footer-soc-item {
-    width: 44px;
-    height: 44px;
-}
-
-.footer-soc-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    color: var(--white-color);
-    border-radius: 50%;
-    transition: background-color 250ms var(--cubic);
-}
-
-.footer-soc-icon {
-    color: currentColor;
-    fill: var(--white-color);
+    &:hover, &:focus {background-color: var(--accent-color)};
+        &-item {
+            width: 44px;
+            height: 44px;
+        }
+        &-link {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(255, 255, 255, 0.1);
+                    color: var(--white-color);
+                    border-radius: 50%;
+                    transition: background-color 250ms var(--cubic);
+                }
+                                &-icon {
+                                    color: currentColor;
+                                    fill: var(--white-color);
+                                }
 }
 .address-content {
     margin-right: 70px;
@@ -101,64 +95,64 @@
     margin-bottom: 20px;
 }
 
-.subscribe-form {
+.subscribe {
     display: flex;
     gap: 12px;
     justify-content: flex-end;
-}
-
-.subscribe-uptitle {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--white-color);
-    margin-bottom: 20px;
-}
-
-.subscribe-label {
-    display: block;
-}
-
-.subscribe-input {
-    width: 358px;
-    height: 50px;
-    background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    border-radius: 4px;
-    outline: transparent;
-    padding-left: 16px;
-    color: rgba(255, 255, 255, 0.6);
-    &::placeholder {
-            font-size: 16px;
-            line-height: 1.25;
-            color: rgba(255, 255, 255, 0.6);}
-}
-.subscribe-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 50px;
-    background-color: var(--accent-color);
-    padding: 0;
-    border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    outline: transparent;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    letter-spacing: 0.06em;
-    color: var(--white-color);
-    transition: transform 250ms var(--cubic);
-    &:active {
-            transform: translateY(2px);
-}
-}
-.subscribe-icon {
-    fill: var(--white-color);
-    margin-left: 10px;
+    &-uptitle {
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: var(--white-color);
+            margin-bottom: 20px;
+        }
+                &-label {
+                    display: block;
+                }
+                               &-input {
+                                    width: 358px;
+                                    height: 50px;
+                                    background-color: transparent;
+                                    border: 1px solid rgba(255, 255, 255, 0.3);
+                                    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+                                    border-radius: 4px;
+                                    outline: transparent;
+                                    padding-left: 16px;
+                                    color: rgba(255, 255, 255, 0.6);
+                
+                                    &::placeholder {
+                                        font-size: 16px;
+                                        line-height: 1.25;
+                                        color: rgba(255, 255, 255, 0.6);
+                                    }
+                                }
+                                                                &-button {
+                                                                    display: flex;
+                                                                    justify-content: center;
+                                                                    align-items: center;
+                                                                    width: 200px;
+                                                                    height: 50px;
+                                                                    background-color: var(--accent-color);
+                                                                    padding: 0;
+                                                                    border: none;
+                                                                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+                                                                    border-radius: 4px;
+                                                                    outline: transparent;
+                                                                    font-weight: 700;
+                                                                    font-size: 16px;
+                                                                    line-height: 1.87;
+                                                                    letter-spacing: 0.06em;
+                                                                    color: var(--white-color);
+                                                                    transition: transform 250ms var(--cubic);
+                                
+                                                                    &:active {
+                                                                        transform: translateY(2px);
+                                                                    }
+                                                                }
+                                                                                                                                &-icon {
+                                                                                                                                    fill: var(--white-color);
+                                                                                                                                    margin-left: 10px;
+                                                                                                                                }
 }
