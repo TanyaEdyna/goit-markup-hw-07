@@ -49,7 +49,7 @@ button {
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
-   &>.top-logo {
+   >.top-logo {
             font-family: 'Raleway', sans-serif;
             color: var(--black-color);
             font-weight: 700;
@@ -63,6 +63,20 @@ button {
 .section {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+ .list {
+     list-style: none;
+     text-decoration: none;
+ }
+.logo {
+    font-family: 'Raleway', sans-serif;
+    color: var(--black-color);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    margin-right: 93px;
 }
  .visually-hidden {
      position: absolute;
